@@ -8,9 +8,18 @@ const pizzaData = [
     { title: 'Pepperoni', photo: `../img/products/${p}_pepperoni.jpg`, price: 8.75, ingredients: ['mocarelos sūris', 'saliamis', 'picų padažas'] },
     { title: 'Cheese', photo: `../img/products/${p}_cheese.jpg`, price: 6.75, ingredients: ['mocarelos sūris', 'fetos sūris', 'picų padažas', 'itališkos žolelės'] },
     { title: 'Vegetarian', photo: `../img/products/${p}_vegetarian.jpg`, price: 7.75, ingredients: ['pievagrybiai', 'fetos sūris', 'marinuoti agurkai', 'juodosios alyvuogės', 'žalioji paprika', 'raudonieji svogūnai', 'pomidorai', 'mocarelos sūris', 'picų padažas',] }
-
 ];
-// TODO jei pirmas ingridientas tai turi prasidėt didžiąją raide ir būti atskirti kableliais
+const s = 'snacks';
+const snackData = [
+    { title: '4 Seasons', photo: `../img/products/${s}_4seasons.jpeg`, price: 7.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'kumpis', 'saliamis', 'picų padažas', 'fetos sūris', 'itališkos žolelės'] },
+    { title: 'Chicken BBQ', photo: `../img/products/${s}_chicken.jpg`, price: 7.75, ingredients: ['šoninė', 'vištiena', 'mocarelos sūris', 'raudonieji svogūnai', 'bbq padažas', 'picų padažas'] },
+    { title: 'Crazy', photo: `../img/products/${s}_crazy.jpeg`, price: 8.75, ingredients: ['saldžarūgštis padažas', 'vištiena', 'mocarelos sūris', 'saliamis', 'picų padažas'] },
+    { title: 'Fiesta', photo: `../img/products/${s}_fiesta.jpeg`, price: 8.75, ingredients: ['vištiena', 'pomidorai', 'mocarelos sūris', 'raudonieji svogūnai', 'saliamis', 'chipotle padažas', 'žalioji paprika', 'česnakinis padažas'] },
+    { title: 'Mexican', photo: `../img/products/${s}_mexican.jpg`, price: 8.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'jalapeno griežinėliai', 'saliamis', 'žalioji paprika', 'vištiena'] },
+    { title: 'Pepperoni', photo: `../img/products/${s}_pepperoni.jpg`, price: 8.75, ingredients: ['mocarelos sūris', 'saliamis', 'picų padažas'] },
+    { title: 'Cheese', photo: `../img/products/${s}_cheese.jpg`, price: 6.75, ingredients: ['mocarelos sūris', 'fetos sūris', 'picų padažas', 'itališkos žolelės'] },
+    { title: 'Vegetarian', photo: `../img/products/${s}_vegetarian.jpg`, price: 7.75, ingredients: ['pievagrybiai', 'fetos sūris', 'marinuoti agurkai', 'juodosios alyvuogės', 'žalioji paprika', 'raudonieji svogūnai', 'pomidorai', 'mocarelos sūris', 'picų padažas',] }
+];
 
 function generatePizza(data) {
     const list = document.querySelector('.productList');
