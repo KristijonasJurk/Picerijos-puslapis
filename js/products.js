@@ -20,9 +20,14 @@ const snacksData = [
     { title: 'Traškučiai BON CHANCE, su sūriu ir česnaku, 120g', photo: `../img/products/${s}_traskuciai.jpeg`, price: 1.50, ingredients: [] },
     { title: 'Bulvytės 300g', photo: `../img/products/${s}_bulvytes.jpeg`, price: 2.50, ingredients: ['Bulvytės 300 g.'] },
     { title: 'Bandelės su pepperoni, 16 vnt.', photo: `../img/products/${s}_bandeles.jpeg`, price: 4.00, ingredients: ['Bandelės su sūriu'] }
-
 ];
-
+const d = 'dessert';
+const snacksData = [
+    { title: 'Bandelės su bruknėmis, 16 vnt.', photo: `../img/products/${d}_bandeles.jpg`, price: 3.00, ingredients: ['Bandelės su bruknėmis'] },
+    { title: 'Ledai Ben & Jerrys Netflix & Chilld, 465 ml', photo: `../img/products/${d}_ledai.jpg`, price: 6.95, ingredients: ['Krosnyje kepti vištienos gabaliukai'] },
+    { title: 'Šviesus mufinas su šokolado lašais', photo: `../img/products/${d}_mufinas.jpg`, price: 1.50, ingredients: ['Dvi sultingos saldžios kukurūzų burbuolės, pateikiamos su sviestu ir druska'] },
+    { title: 'Braškinė spurga', photo: `../img/products/${d}_spurga.jpg`, price: 1.50, ingredients: ['vištiena, vynoginia pomidorai, gūžinės salotos Iceberg, skrebučiai, parmezano sūris, bazilikai ir cezario padažas'] }
+];
 function generatePizza(data) {
     const list = document.querySelector('.snacksList');
     for (let i = 0; i < data.length; i++) {
