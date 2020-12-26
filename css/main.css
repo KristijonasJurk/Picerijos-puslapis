@@ -14,8 +14,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 10fr 1fr;
       grid-template-columns: 1fr 10fr 1fr;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
 }
 
 header {
@@ -369,6 +369,114 @@ header .headerBottom button:hover {
   background-color: #FFD2B3;
 }
 
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin: 50px 0px 30px 0px;
+}
+
+footer h2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 30px 0px;
+}
+
+footer h5 {
+  color: #FF5C01;
+  font-weight: 100;
+  word-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+footer h6 {
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+footer .footerLeft {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+footer .footerMiddle {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+footer .footerRight {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+footer .footerRight a {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+}
+
+footer .footerRight a:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
+}
+
+footer .footerRight a div {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+footer .footerRight a div::after {
+  content: 'Pristatymo zona';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: black;
+}
+
+footer .footerRight a img {
+  width: 300px;
+  height: 300px;
+}
+
 .mediumText {
   font-size: 20px;
   font-weight: 500;
@@ -380,5 +488,9 @@ header .headerBottom button:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.upppercase {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
