@@ -269,6 +269,20 @@ header .headerBottom button:hover {
   color: #363636;
 }
 
+.popup1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+  min-width: 1024px;
+  max-width: 80%;
+  min-height: 600px;
+}
+
 .productContainer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
