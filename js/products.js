@@ -73,7 +73,7 @@ function generatePizza(data) {
                 first = data[i].ingredients[j].charAt(0).toUpperCase() + data[i].ingredients[j].slice(1)
                 p.innerText += ` ${first},`;
             }
-            if (j == data[i].ingredients.length - 1) {
+            else if (j == data[i].ingredients.length - 1) {
                 p.innerText += ` ${data[i].ingredients[j]}.`;
             } else {
                 p.innerText += ` ${data[i].ingredients[j]},`;
@@ -117,7 +117,7 @@ function generateSnacks(data) {
         price.innerText = `nuo ${data[i].price} €`;
         button.innerHTML = 'Pasirinkti';
         p.innerText += ` ${data[i].ingredients[0]}.`;
-        a.href = data[i].photo;
+        // a.href = data[i].photo;
 
         a.appendChild(img);
         div.appendChild(price);
@@ -156,7 +156,7 @@ function generateDessert(data) {
         price.innerText = `nuo ${data[i].price} €`;
         button.innerHTML = 'Pasirinkti';
         p.innerText += ` ${data[i].ingredients[0]}.`;
-        a.href = data[i].photo;
+        // a.href = data[i].photo;
 
         a.appendChild(img);
         div.appendChild(price);
@@ -195,7 +195,7 @@ function generateDrinks(data) {
         price.innerText = `nuo ${data[i].price} €`;
         button.innerHTML = 'Pasirinkti';
         p.innerText += ` ${data[i].ingredients[0]}.`;
-        a.href = data[i].photo;
+        // a.href = data[i].photo;
 
         a.appendChild(img);
         div.appendChild(price);
@@ -233,7 +233,7 @@ function generateOther(data) {
         price.innerText = `nuo ${data[i].price} €`;
         button.innerHTML = 'Pasirinkti';
         p.innerText += ` ${data[i].ingredients[0]}.`;
-        a.href = data[i].photo;
+        // a.href = data[i].photo;
 
         a.appendChild(img);
         div.appendChild(price);

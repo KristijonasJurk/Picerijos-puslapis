@@ -255,6 +255,7 @@ header {
         .popup1tags {
             display: flex;
             justify-content: flex-start;
+            flex-wrap: wrap;
             margin: 10px 0 0 20px;
             a {
                 display: flex;
@@ -295,6 +296,15 @@ header {
             border-radius: 20px;
             color: #000;
             cursor: pointer;
+            a {
+                width: 33%;
+                height: 85%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                transition: 0.3s;
+            }
             .sizeChecked {
                 background-color: white;
                 width: 33%;

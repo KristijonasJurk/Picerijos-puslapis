@@ -374,6 +374,8 @@ header .headerBottom button:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 10px 0 0 20px;
 }
 
@@ -433,6 +435,23 @@ header .headerBottom button:hover {
   border-radius: 20px;
   color: #000;
   cursor: pointer;
+}
+
+.popup1 .popupRight .pizzaSizes a {
+  width: 33%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .popup1 .popupRight .pizzaSizes .sizeChecked {
