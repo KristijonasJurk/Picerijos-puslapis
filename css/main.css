@@ -400,9 +400,141 @@ header .headerBottom button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   border-radius: 20px;
+  color: #000;
+}
+
+.popup1 .popupRight .pizzaSizes .sizeChecked {
+  background-color: white;
+  width: 33%;
+  height: 85%;
+  -webkit-box-shadow: 0 0 4px 1px #c8c8c8;
+          box-shadow: 0 0 4px 1px #c8c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+.popup1 .popupRight .pizzaTraditional {
+  margin: 10px 0 0 20px;
+  width: calc(100% - 40px);
+  height: 32px;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #000;
+}
+
+.popup1 .popupRight .pizzaTraditional div {
+  background-color: white;
+  width: 99%;
+  height: 90%;
+  -webkit-box-shadow: 0 0 4px 1px #c8c8c8;
+          box-shadow: 0 0 4px 1px #c8c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+.popup1 .popupRight h6 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0 0px 20px;
+}
+
+.popup1 .popupRight .pizzaAdBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 0 0 20px;
+}
+
+.popup1 .popupRight .pizzaAdBoxes .pizzaAdBox {
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px 0px #e0dfdf;
+          box-shadow: 0 0 4px 0px #e0dfdf;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 160px;
+  width: 105px;
+  margin: 10px 10px 10px 0px;
+}
+
+.popup1 .popupRight .pizzaAdBoxes .pizzaAdBox img {
+  height: 90px;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.popup1 .popupRight .pizzaAdBoxes .pizzaAdBox div {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.popup1 .popupRight .pizzaAdBoxes .pizzaAdBox h5 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.popup1 .popupRight button {
+  margin: 100px 20px 20px 20px;
+  width: calc(100% - 40px);
+  height: 48px;
+  color: white;
+  background-color: #FF5C01;
+  line-height: 24px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+}
+
+.popup1 .popupRight button:hover {
+  background-color: #d44e06;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .productContainer {
