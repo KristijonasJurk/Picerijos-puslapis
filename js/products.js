@@ -67,7 +67,7 @@ function generatePizza(data) {
         h6.innerText = data[i].title;
         price.innerText = `nuo ${data[i].price} €`;
         button.innerHTML = 'Pasirinkti';
-        a.href = data[i].photo;
+        // a.href = data[i].photo;
         for (let j = 0; j < data[i].ingredients.length; j++) {
             if (j == 0) {
                 first = data[i].ingredients[j].charAt(0).toUpperCase() + data[i].ingredients[j].slice(1)

@@ -270,20 +270,24 @@ header .headerBottom button:hover {
 }
 
 .popupOverlay {
+  display: none;
   position: fixed;
   top: 0%;
   left: 0%;
   right: 0%;
   bottom: 0%;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .popup1 {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   z-index: 2;
   background-color: white;
   border-radius: 20px;
@@ -296,6 +300,8 @@ header .headerBottom button:hover {
       grid-template-columns: 3fr 2fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .popup1 .popupClose {
@@ -426,6 +432,7 @@ header .headerBottom button:hover {
   font-size: 12px;
   border-radius: 20px;
   color: #000;
+  cursor: pointer;
 }
 
 .popup1 .popupRight .pizzaSizes .sizeChecked {
@@ -464,6 +471,7 @@ header .headerBottom button:hover {
   font-size: 12px;
   border-radius: 20px;
   color: #000;
+  cursor: pointer;
 }
 
 .popup1 .popupRight .pizzaTraditional div {
@@ -498,6 +506,7 @@ header .headerBottom button:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 10px 0 0 20px;
+  cursor: pointer;
 }
 
 .popup1 .popupRight .pizzaAdBoxes .pizzaAdBox {
@@ -557,6 +566,16 @@ header .headerBottom button:hover {
   background-color: #d44e06;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.popup1.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.popupOverlay.active {
+  opacity: 1;
+  display: block;
 }
 
 .productContainer {
