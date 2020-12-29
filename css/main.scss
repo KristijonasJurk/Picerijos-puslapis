@@ -188,12 +188,63 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 2;
     background-color: white;
     border-radius: 10px;
     min-width: 1024px;
     max-width: 80%;
     min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+
+    .popup1Left {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            img {
+                width: 400px;
+            }
+        }
+    }
+    .popupRight {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-weight: 500;
+            font-size: 24px;
+            margin: 30px 0 0;
+        }
+        h4 {
+            font-weight: 200;
+            font-size: 12px;
+            color: gray;
+            margin: 5px 0px;
+        }
+        .popup1tags {
+            display: flex;
+            justify-content: flex-start;
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+
+                color: green;
+                p {
+                    margin: 0 5px 0 0;
+                }
+                .closeIngredient {
+                    font-size: ;
+                }
+            }
+        }
+    }
 }
 
 
