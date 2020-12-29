@@ -48,6 +48,8 @@ function specificProduct(product) {
         pizzaSizes()
         // and remove ingredient if x is clicked
         ingredientClose()
+        // when an ad in is selected
+        ads()
     }
 }
 function pizzaSizes() {
@@ -70,9 +72,24 @@ function ingredientClose() {
     })
 }
 function removeIngredients() {
-    const ingredients = document.querySelectorAll('ingredient');
-    ingredients.foreach(ingr => {
-        ingr.remove();
-        // console.log('hee');
+    const ingredients = document.querySelectorAll('.ingredient');
+    for (let i = 0; i < ingredients.length; i++) {
+        ingredients[i].remove();
+    }
+}
+function ads() {
+    const ads = document.querySelectorAll('.pizzaAdBox');
+    ads.forEach(ad => {
+        let index = 0;
+        ad.addEventListener('click', () => {
+            index++;
+            if (index % 2 !== 0) {
+                ad.style.border = '1px solid #FF5C01';
+                ad.children[1].style.transform = 'scale(1)';
+            } else {
+                ad.style.border = 'none';
+                ad.children[1].style.transform = 'scale(0)';
+            }
+        })
     })
 }

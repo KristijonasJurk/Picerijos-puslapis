@@ -361,6 +361,18 @@ header {
                 height: 160px;
                 width: 105px;
                 margin: 10px 10px 10px 0px;
+                position: relative;
+                i {
+                    border-radius: 50%;
+                    border: 1px solid $orange;
+                    color: $orange;
+                    font-size: 8px;
+                    padding: 3px;
+                    position: absolute;
+                    top: 10%;
+                    right: 10%;
+                    transform: scale(0);
+                }
                 img {
                     height: 90px;
                     width: 90px;

@@ -549,6 +549,20 @@ header .headerBottom button:hover {
   height: 160px;
   width: 105px;
   margin: 10px 10px 10px 0px;
+  position: relative;
+}
+
+.popup1 .popupRight .pizzaAdBoxes .pizzaAdBox i {
+  border-radius: 50%;
+  border: 1px solid #FF5C01;
+  color: #FF5C01;
+  font-size: 8px;
+  padding: 3px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .popup1 .popupRight .pizzaAdBoxes .pizzaAdBox img {
