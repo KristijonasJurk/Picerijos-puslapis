@@ -57,6 +57,7 @@ function generatePizza(data) {
         const button = document.createElement('button');
 
         product.setAttribute('class', 'product');
+        product.setAttribute('id', 'pizza');
         h6.setAttribute('class', 'mediumText');
         div.setAttribute('class', 'productFooter');
         price.setAttribute('class', 'mediumText');

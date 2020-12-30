@@ -5,8 +5,14 @@ const popup = document.querySelector('.popup1');
 // for each product card
 products.forEach(product => {
     product.addEventListener('click', () => {
-        openPopup();
-        specificProduct(product);
+        if (product.id == 'pizza') {
+            openPopup();
+            specificProduct(product);
+        } else {
+            // otherProductOpen();
+            openPopup();
+            specificProduct(product);
+        }
     })
 })
 close.addEventListener('click', () => {
@@ -30,28 +36,33 @@ function specificProduct(product) {
     image.src = product.children[0].children[0].src;
     // add the h2 tag to the name of the product
     document.querySelector('.popupRight h2').innerHTML = product.children[1].innerHTML;
-    // add the ingredients
-    const string = product.children[2].innerHTML;
-    var ingr = string.trim().split(",");
-    for (let i = 0; i < ingr.length; i++) {
-        const a = document.createElement('a');
-        const p = document.createElement('p');
-        const div = document.createElement('div');
-        a.setAttribute('class', 'ingredient');
-        div.setAttribute('class', 'closeIngredient');
-        div.innerHTML = 'x';
-        p.innerHTML = ingr[i];
-        a.appendChild(p);
-        a.appendChild(div);
-        document.querySelector('.popup1tags').appendChild(a);
-        // generate ingredient list
-        pizzaSizes()
-        // and remove ingredient if x is clicked
-        ingredientClose()
-        // when an ad in is selected
-        ads()
-        // change sizes when size buttons are clicked
-        changeSizes()
+    if (product.id == 'pizza') {
+        // add the ingredients
+        const string = product.children[2].innerHTML;
+        var ingr = string.trim().split(",");
+        for (let i = 0; i < ingr.length; i++) {
+            const a = document.createElement('a');
+            const p = document.createElement('p');
+            const div = document.createElement('div');
+            a.setAttribute('class', 'ingredient');
+            div.setAttribute('class', 'closeIngredient');
+            div.innerHTML = 'x';
+            p.innerHTML = ingr[i];
+            a.appendChild(p);
+            a.appendChild(div);
+            document.querySelector('.popup1tags').appendChild(a);
+            // generate ingredient list
+            pizzaSizes()
+            // and remove ingredient if x is clicked
+            ingredientClose()
+            // when an ad in is selected
+            ads()
+            // change sizes when size buttons are clicked
+            changeSizes()
+        }
+    } else {
+        //for not pizza products
+        console.log('yes');
     }
 }
 function ingredientClose() {
@@ -110,8 +121,8 @@ function changeSizes() {
                 pizza.style.right = '55.5%';
                 pizza.style.top = '25%';
             } else if (button.innerHTML == 'Didelė') {
-                pizza.style.width = '380px';
-                pizza.style.right = '51.5%';
+                pizza.style.width = '400px';
+                pizza.style.right = '50.5%';
                 pizza.style.top = '17.9%';
             }
         })
