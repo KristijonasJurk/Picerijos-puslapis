@@ -74,13 +74,16 @@ function specificProduct(product) {
         // add a text area with the quantity of the product
         const text = document.querySelector('.popupRight h2').innerHTML;
         const p = document.createElement('p');
-        document.querySelector('pop')
+        const h4 = document.querySelector('.popupRight h4');
+        h4.appendChild(p);
+        p.style.fontSize = '16px';
+        p.style.color = 'black';
         if (text.includes('vnt')) {
-            text.substr(text.length - 6)
+            p.innerHTML = text.substr(text.length - 6)
         } else if (text.includes('0g')) {
-
+            p.innerHTML = text.substr(text.length - 4)
         } else if (text.includes('cm')) {
-
+            p.innerHTML = text.substr(text.length - 5)
         }
     }
 }
@@ -93,6 +96,7 @@ function resetStyles() {
         ad.style.opacity = '1';
     }
     document.querySelector('.popup1').style.minHeight = '600px';
+    document.querySelector('.popupRight h4 p').remove();
 }
 function ingredientClose() {
     const closeAll = document.querySelectorAll('.closeIngredient');
