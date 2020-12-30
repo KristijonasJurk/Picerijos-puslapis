@@ -80,7 +80,7 @@ function specificProduct(product) {
         p.style.color = 'black';
         p.innerHTML += product.children[2].innerHTML;
         if (text.includes('vnt') || text.includes(' ml')) {
-            p.innerHTML += text.substr(text.length - 6)
+            p.innerHTML += text.substr(text.length - 6);
         } else if (text.includes('0g')) {
             p.innerHTML += text.substr(text.length - 4)
         } else if (text.includes('cm')) {
@@ -169,3 +169,4 @@ function changeSizes() {
         })
     }
 }
+// TODO add price tag to add to cart button

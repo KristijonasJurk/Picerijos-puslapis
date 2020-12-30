@@ -18,7 +18,7 @@ const snacksData = [
     { title: 'Cezario salotos', photo: `../img/products/${s}_salotos.jpg`, price: 3.50, ingredients: ['vištiena, vynoginia pomidorai, gūžinės salotos Iceberg, skrebučiai, parmezano sūris, bazilikai ir cezario padažas'] },
     { title: 'Aštrūs vištienos sparneliai Buffalo, 7 vnt.', photo: `../img/products/${s}_sparneliai.jpg`, price: 4.50, ingredients: ['Skanūs vištienos sparneliai'] },
     { title: 'Traškučiai BON CHANCE, su sūriu ir česnaku, 120g', photo: `../img/products/${s}_traskuciai.jpeg`, price: 1.50, ingredients: [''] },
-    { title: 'Bulvytės 300g', photo: `../img/products/${s}_bulvytes.jpeg`, price: 2.50, ingredients: ['Bulvytės 300 g.'] },
+    { title: 'Bulvytės 300g', photo: `../img/products/${s}_bulvytes.jpeg`, price: 2.50, ingredients: ['Bulvytės'] },
     { title: 'Bandelės su pepperoni, 16 vnt.', photo: `../img/products/${s}_bandeles.jpeg`, price: 4.00, ingredients: ['Bandelės su sūriu'] }
 ];
 const d = 'dessert';
