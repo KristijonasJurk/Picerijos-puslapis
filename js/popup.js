@@ -78,12 +78,17 @@ function specificProduct(product) {
         h4.appendChild(p);
         p.style.fontSize = '16px';
         p.style.color = 'black';
-        if (text.includes('vnt')) {
-            p.innerHTML = text.substr(text.length - 6)
+        p.innerHTML += product.children[2].innerHTML;
+        if (text.includes('vnt') || text.includes(' ml')) {
+            p.innerHTML += text.substr(text.length - 6)
         } else if (text.includes('0g')) {
-            p.innerHTML = text.substr(text.length - 4)
+            p.innerHTML += text.substr(text.length - 4)
         } else if (text.includes('cm')) {
-            p.innerHTML = text.substr(text.length - 5)
+            p.innerHTML += text.substr(text.length - 5)
+        }
+        // for drinks and other category products
+        if (product.id == 'drink' || product.id == 'other') {
+            document.querySelector('.popupRight h4 p').innerHTML = product.children[2].innerHTML;
         }
     }
 }
@@ -96,7 +101,10 @@ function resetStyles() {
         ad.style.opacity = '1';
     }
     document.querySelector('.popup1').style.minHeight = '600px';
-    document.querySelector('.popupRight h4 p').remove();
+    if (document.querySelector('.popupRight h4 p')) {
+        document.querySelector('.popupRight h4 p').remove();
+    }
+
 }
 function ingredientClose() {
     const closeAll = document.querySelectorAll('.closeIngredient');

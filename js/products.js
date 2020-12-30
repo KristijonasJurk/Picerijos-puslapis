@@ -185,6 +185,7 @@ function generateDrinks(data) {
         const button = document.createElement('button');
 
         product.setAttribute('class', 'product');
+        product.setAttribute('id', 'drink');
         h6.setAttribute('class', 'mediumText');
         div.setAttribute('class', 'productFooter');
         price.setAttribute('class', 'mediumText');
@@ -228,6 +229,7 @@ function generateOther(data) {
         price.setAttribute('class', 'mediumText');
         price.setAttribute('class', 'price');
         button.setAttribute('class', 'buttonShape');
+        product.setAttribute('id', 'other');
 
         img.src = data[i].photo;
         h6.innerText = data[i].title;
