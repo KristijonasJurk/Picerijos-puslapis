@@ -1,14 +1,14 @@
 
 const p = 'pizza';
 const pizzaData = [
-    { title: '4 Seasons', photo: `../img/products/${p}_4seasons.jpeg`, price: 7.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'kumpis', 'saliamis', 'picų padažas', 'fetos sūris', 'itališkos žolelės'] },
-    { title: 'Chicken BBQ', photo: `../img/products/${p}_chicken.jpg`, price: 7.75, ingredients: ['šoninė', 'vištiena', 'mocarelos sūris', 'raudonieji svogūnai', 'bbq padažas', 'picų padažas'] },
-    { title: 'Crazy', photo: `../img/products/${p}_crazy.jpeg`, price: 8.75, ingredients: ['saldžarūgštis padažas', 'vištiena', 'mocarelos sūris', 'saliamis', 'picų padažas'] },
-    { title: 'Fiesta', photo: `../img/products/${p}_fiesta.jpeg`, price: 8.75, ingredients: ['vištiena', 'pomidorai', 'mocarelos sūris', 'raudonieji svogūnai', 'saliamis', 'chipotle padažas', 'žalioji paprika', 'česnakinis padažas'] },
-    { title: 'Mexican', photo: `../img/products/${p}_mexican.jpg`, price: 8.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'jalapeno griežinėliai', 'saliamis', 'žalioji paprika', 'vištiena'] },
-    { title: 'Pepperoni', photo: `../img/products/${p}_pepperoni.jpg`, price: 8.75, ingredients: ['mocarelos sūris', 'saliamis', 'picų padažas'] },
-    { title: 'Cheese', photo: `../img/products/${p}_cheese.jpg`, price: 6.75, ingredients: ['mocarelos sūris', 'fetos sūris', 'picų padažas', 'itališkos žolelės'] },
-    { title: 'Vegetarian', photo: `../img/products/${p}_vegetarian.jpg`, price: 7.75, ingredients: ['pievagrybiai', 'fetos sūris', 'marinuoti agurkai', 'juodosios alyvuogės', 'žalioji paprika', 'raudonieji svogūnai', 'pomidorai', 'mocarelos sūris', 'picų padažas',] }
+    { title: '4 Seasons', photo: `../img/products/${p}_4seasons.png`, price: 7.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'kumpis', 'saliamis', 'picų padažas', 'fetos sūris', 'itališkos žolelės'] },
+    { title: 'Chicken BBQ', photo: `../img/products/${p}_chicken.png`, price: 7.75, ingredients: ['šoninė', 'vištiena', 'mocarelos sūris', 'raudonieji svogūnai', 'bbq padažas', 'picų padažas'] },
+    { title: 'Crazy', photo: `../img/products/${p}_crazy.png`, price: 8.75, ingredients: ['saldžarūgštis padažas', 'vištiena', 'mocarelos sūris', 'saliamis', 'picų padažas'] },
+    { title: 'Fiesta', photo: `../img/products/${p}_fiesta.png`, price: 8.75, ingredients: ['vištiena', 'pomidorai', 'mocarelos sūris', 'raudonieji svogūnai', 'saliamis', 'chipotle padažas', 'žalioji paprika', 'česnakinis padažas'] },
+    { title: 'Mexican', photo: `../img/products/${p}_mexican.png`, price: 8.75, ingredients: ['pievagrybiai', 'pomidorai', 'mocarelos sūris', 'jalapeno griežinėliai', 'saliamis', 'žalioji paprika', 'vištiena'] },
+    { title: 'Pepperoni', photo: `../img/products/${p}_pepperoni.png`, price: 8.75, ingredients: ['mocarelos sūris', 'saliamis', 'picų padažas'] },
+    { title: 'Cheese', photo: `../img/products/${p}_cheese.png`, price: 6.75, ingredients: ['mocarelos sūris', 'fetos sūris', 'picų padažas', 'itališkos žolelės'] },
+    { title: 'Vegetarian', photo: `../img/products/${p}_vegetarian.png`, price: 7.75, ingredients: ['pievagrybiai', 'fetos sūris', 'marinuoti agurkai', 'juodosios alyvuogės', 'žalioji paprika', 'raudonieji svogūnai', 'pomidorai', 'mocarelos sūris', 'picų padažas',] }
 ];
 const s = 'snacks';
 const snacksData = [

@@ -337,6 +337,18 @@ header .headerBottom button:hover {
 
 .popup1 .popup1Left div img {
   width: 400px;
+  position: absolute;
+}
+
+.popup1 .popup1Left div img:first-of-type {
+  width: 300px;
+  right: 50%;
+  top: 50%;
+}
+
+.popup1 .popup1Left div img:last-of-type {
+  right: 50%;
+  top: 50%;
 }
 
 .popup1 .popupRight {

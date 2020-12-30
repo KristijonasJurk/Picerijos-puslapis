@@ -232,6 +232,16 @@ header {
         div {
             img {
                 width: 400px;
+                position: absolute;
+                &:first-of-type {
+                    width: 300px;
+                    right: 50%;
+                    top: 50%;
+                }
+                &:last-of-type {
+                    right: 50%;
+                    top: 50%;
+                }
             }
         }
     }
