@@ -9,7 +9,6 @@ products.forEach(product => {
             openPopup();
             specificProduct(product);
         } else {
-            // otherProductOpen();
             openPopup();
             specificProduct(product);
         }
@@ -28,6 +27,7 @@ function closePopup() {
     popup.classList.remove('active');
     overlay.classList.remove('active');
     removeIngredients();
+    resetStyles()
 }
 // we alter the popup card considering the produt, which was clicked (this is a temprary solution)
 function specificProduct(product) {
@@ -62,8 +62,37 @@ function specificProduct(product) {
         }
     } else {
         //for not pizza products
-        console.log('yes');
+        document.querySelectorAll('.productImage img')[1].style.opacity = '0';
+        document.querySelector('.pizzaSizes').style.opacity = '0';
+        document.querySelector('.pizzaTraditional').style.opacity = '0';
+        document.querySelector('.pizzaTraditional').style.opacity = '0';
+        document.querySelector('.popupRight h6').style.opacity = '0';
+        for (const ad of document.querySelectorAll('.pizzaAdBox')) {
+            ad.style.opacity = '0';
+        }
+        document.querySelector('.popup1').style.minHeight = '200px';
+        // add a text area with the quantity of the product
+        const text = document.querySelector('.popupRight h2').innerHTML;
+        const p = document.createElement('p');
+        document.querySelector('pop')
+        if (text.includes('vnt')) {
+            text.substr(text.length - 6)
+        } else if (text.includes('0g')) {
+
+        } else if (text.includes('cm')) {
+
+        }
     }
+}
+function resetStyles() {
+    document.querySelectorAll('.productImage img')[1].style.opacity = '0.3';
+    document.querySelector('.pizzaSizes').style.opacity = '1';
+    document.querySelector('.pizzaTraditional').style.opacity = '1';
+    document.querySelector('.popupRight h6').style.opacity = '1';
+    for (const ad of document.querySelectorAll('.pizzaAdBox')) {
+        ad.style.opacity = '1';
+    }
+    document.querySelector('.popup1').style.minHeight = '600px';
 }
 function ingredientClose() {
     const closeAll = document.querySelectorAll('.closeIngredient');
@@ -115,7 +144,7 @@ function changeSizes() {
             if (button.innerHTML == 'Maža') {
                 pizza.style.width = '210px';
                 pizza.style.right = '60%';
-                pizza.style.top = '32.6%';
+                pizza.style.top = '32%';
             } else if (button.innerHTML == 'Vidutinė') {
                 pizza.style.width = '300px';
                 pizza.style.right = '55.5%';
