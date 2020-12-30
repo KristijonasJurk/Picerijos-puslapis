@@ -50,18 +50,9 @@ function specificProduct(product) {
         ingredientClose()
         // when an ad in is selected
         ads()
+        // change sizes when size buttons are clicked
+        changeSizes()
     }
-}
-function pizzaSizes() {
-    const buttons = document.querySelectorAll('.pizzaSizes a');
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove('sizeChecked');
-            }
-            button.classList.add('sizeChecked');
-        })
-    })
 }
 function ingredientClose() {
     const closeAll = document.querySelectorAll('.closeIngredient');
@@ -92,4 +83,37 @@ function ads() {
             }
         })
     })
+}
+function pizzaSizes() {
+    const buttons = document.querySelectorAll('.pizzaSizes a');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('sizeChecked');
+            }
+            button.classList.add('sizeChecked');
+        })
+    })
+}
+// instead of forEach I wanted to try for of
+function changeSizes() {
+    const buttons = document.querySelectorAll('.pizzaSizes a');
+    const pizza = document.querySelector('.productImage img');
+    for (const button of buttons) {
+        button.addEventListener('click', () => {
+            if (button.innerHTML == 'Maža') {
+                pizza.style.width = '210px';
+                pizza.style.right = '60%';
+                pizza.style.top = '32.6%';
+            } else if (button.innerHTML == 'Vidutinė') {
+                pizza.style.width = '300px';
+                pizza.style.right = '55.5%';
+                pizza.style.top = '25%';
+            } else if (button.innerHTML == 'Didelė') {
+                pizza.style.width = '380px';
+                pizza.style.right = '51.5%';
+                pizza.style.top = '17.9%';
+            }
+        })
+    }
 }

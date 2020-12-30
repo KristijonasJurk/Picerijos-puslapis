@@ -342,13 +342,18 @@ header .headerBottom button:hover {
 
 .popup1 .popup1Left div img:first-of-type {
   width: 300px;
-  right: 50%;
-  top: 50%;
+  right: calc(55.5%);
+  top: calc(25%);
+  z-index: 5;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .popup1 .popup1Left div img:last-of-type {
-  right: 50%;
-  top: 50%;
+  right: calc(60% - 85px);
+  top: calc(0% + 90px);
+  z-index: 1;
+  opacity: 0.3;
 }
 
 .popup1 .popupRight {
