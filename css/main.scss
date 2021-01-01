@@ -24,11 +24,17 @@ body {
 header {
     grid-column: 2/3;
     grid-row: 1/2;
-    // background-color: #FF5C01;
+    background-color: white;
     display: flex;
     flex-direction: column;
     // background-color: #d44e06;
-
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 0px 8%;
+    padding-bottom: 10px;
+    z-index: 2;
     .headerTop {
         display: flex;
         margin-top: 20px;
@@ -125,13 +131,20 @@ header {
         }
     }
 }
+.fixedHeader {
+    display: st;
+    background-color: greenyellow;
+    button {
+        width: 100px;
+    }
+}
 .slide {
     grid-column: 2/3;
     grid-row: 2/3;
     // background-color: #FF5C01;
     display: flex;
     flex-direction: row;
-    margin: 20px auto;
+    margin: 140px auto 0px;
     width: 1250px;
     overflow: hidden;
     position: relative;
