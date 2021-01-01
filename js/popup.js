@@ -27,7 +27,8 @@ function closePopup() {
     popup.classList.remove('active');
     overlay.classList.remove('active');
     removeIngredients();
-    resetStyles()
+    resetStyles();
+    resetSize();
 }
 // we alter the popup card considering the produt, which was clicked (this is a temprary solution)
 function specificProduct(product) {
@@ -168,5 +169,11 @@ function changeSizes() {
             }
         })
     }
+}
+function resetSize() {
+    const pizza = document.querySelector('.productImage img');
+    pizza.style.width = '300px';
+    pizza.style.right = '55.5%';
+    pizza.style.top = '25%';
 }
 // TODO add price tag to add to cart button
