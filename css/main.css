@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 body * {
   margin: 0;
@@ -161,7 +165,12 @@ header .headerBottom ul li:first-of-type {
   margin-left: 0px;
 }
 
-header .headerBottom ul li:hover {
+header .headerBottom ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header .headerBottom ul li a:hover {
   color: #FF5C01;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -2,7 +2,9 @@ $orange:#FF5C01;
 $gray: #F3F3F7;
 $lightOrange: #FFD2B3;
 $lighterOrange: #FFF0E6;
-
+html {
+    scroll-behavior: smooth;
+}
 body,
 body * {
 margin: 0;
@@ -100,9 +102,13 @@ header {
                 &:first-of-type {
                     margin-left: 0px;
                 }
-                &:hover {
-                    color: #FF5C01;
-                    transition: 0.3s;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    &:hover {
+                        color: #FF5C01;
+                        transition: 0.3s;
+                    }
                 }
             }
         }

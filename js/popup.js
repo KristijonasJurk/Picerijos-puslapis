@@ -21,6 +21,7 @@ close.addEventListener('click', () => {
 function openPopup() {
     popup.classList.add('active');
     overlay.classList.add('active');
+    generatePrice();
 }
 // close popup card
 function closePopup() {
@@ -176,4 +177,8 @@ function resetSize() {
     pizza.style.right = '55.5%';
     pizza.style.top = '25%';
 }
+function generatePrice() {
+
+}
+
 // TODO add price tag to add to cart button
