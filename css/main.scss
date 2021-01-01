@@ -32,7 +32,7 @@ header {
     top: 0%;
     right: 0%;
     left: 0%;
-    margin: 0px 8%;
+    margin: 0px 0%;
     padding-bottom: 10px;
     z-index: 2;
     .headerTop {
@@ -40,9 +40,11 @@ header {
         margin-top: 20px;
         justify-content: space-between;
         align-items: center;
+        margin: 20px 8% 0;
         .title {
             display: flex;
             align-items: center;
+            min-width: 240px;
             img {
                 height: 40px;
                 margin-right: 20px;
@@ -55,6 +57,8 @@ header {
         .headerDeliveryText {
             display: flex;
             flex-direction: column;
+            min-width: 320px;
+            margin: 0 0 0 40px;
             h5 span{
                 color: $orange
             }
@@ -69,7 +73,8 @@ header {
         .headerPhone {
             display: flex;
             flex-direction: column;
-            margin-right: 330px;
+            min-width: 110px;
+            margin: 0 330px 0 50px;
             h6 {
                 color: gray;
                 font-size: 14px;
@@ -97,7 +102,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin: 20px 8% 10px;
         ul {
             display: flex;
             flex-direction: row;
@@ -132,10 +137,27 @@ header {
     }
 }
 .fixedHeader {
-    display: st;
-    background-color: greenyellow;
-    button {
-        width: 100px;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    margin: 0px 0% 0px;
+    .headerTop {
+        display: none;
+    }
+    .headerBottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        ul {
+            align-items: center;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        button {
+            
+        }
     }
 }
 .slide {

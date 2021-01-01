@@ -41,7 +41,7 @@ header {
   top: 0%;
   right: 0%;
   left: 0%;
-  margin: 0px 8%;
+  margin: 0px 0%;
   padding-bottom: 10px;
   z-index: 2;
 }
@@ -57,6 +57,7 @@ header .headerTop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px 8% 0;
 }
 
 header .headerTop .title {
@@ -66,6 +67,7 @@ header .headerTop .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 240px;
 }
 
 header .headerTop .title img {
@@ -86,6 +88,8 @@ header .headerTop .headerDeliveryText {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 320px;
+  margin: 0 0 0 40px;
 }
 
 header .headerTop .headerDeliveryText h5 span {
@@ -109,7 +113,8 @@ header .headerTop .headerPhone {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 330px;
+  min-width: 110px;
+  margin: 0 330px 0 50px;
 }
 
 header .headerTop .headerPhone h6 {
@@ -150,7 +155,7 @@ header .headerBottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  margin: 20px 8% 10px;
 }
 
 header .headerBottom ul {
@@ -198,12 +203,39 @@ header .headerBottom button:hover {
 }
 
 .fixedHeader {
-  display: st;
-  background-color: greenyellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px 0% 0px;
 }
 
-.fixedHeader button {
-  width: 100px;
+.fixedHeader .headerTop {
+  display: none;
+}
+
+.fixedHeader .headerBottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fixedHeader .headerBottom ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixedHeader .headerBottom img {
+  width: 32px;
+  height: 32px;
 }
 
 .slide {
