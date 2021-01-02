@@ -60,13 +60,17 @@ header .headerTop {
 }
 
 header .headerTop .title {
+  min-width: 240px;
+}
+
+header .headerTop .title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 240px;
+  text-decoration: none;
 }
 
 header .headerTop .title img {
@@ -77,6 +81,7 @@ header .headerTop .title img {
 header .headerTop .title h1 {
   letter-spacing: 1px;
   font-size: 28px;
+  color: black;
 }
 
 header .headerTop .orderProcess {
@@ -191,6 +196,19 @@ main h3:last-of-type {
   margin: 50px 0 20px;
 }
 
+main .saucesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 main .sauces {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,10 +227,11 @@ main .sauces {
   border-radius: 14px;
   width: 108px;
   height: 170px;
+  margin: 0 10px;
 }
 
 main .sauces img {
-  width: 70px;
+  width: 64px;
   margin: 0 0 10px;
 }
 
@@ -231,6 +250,13 @@ main .sauces button {
   color: #d15700;
   font-size: 14px;
   margin: 10px 0 10px 0;
+}
+
+main .sauces button:hover {
+  background-color: #FFD2B3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 main .promoCode input {
