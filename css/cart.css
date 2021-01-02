@@ -172,4 +172,31 @@ main h3 {
   margin: 50px 0;
   font-size: 22px;
 }
+
+main h3:last-of-type {
+  margin: 50px 0 10px;
+}
+
+main .promoCode input {
+  height: 29px;
+  width: 180px;
+  font-size: 13px;
+  font-weight: 400;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #b9b8b8;
+}
+
+main .promoCode button {
+  height: 29px;
+  width: 90px;
+  font-size: 13px;
+  font-weight: 400;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: #FF5C01;
+  color: white;
+  margin-left: -5px;
+}
 /*# sourceMappingURL=cart.css.map */

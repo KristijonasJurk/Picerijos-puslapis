@@ -115,5 +115,35 @@ main {
         font-weight: 400;
         margin: 50px 0;
         font-size: 22px;
+        &:last-of-type {
+            margin: 50px 0 10px;
+        }
+    }
+    .sauces {
+
+    }
+    .promoCode {
+
+        input {
+            height: 29px;
+            width: 180px;
+            font-size: 13px;
+            font-weight: 400;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: 1px solid rgb(185, 184, 184);
+        }
+        button {
+            height: 29px;
+            width: 90px;
+            font-size: 13px;
+            font-weight: 400;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: none;
+            background-color: #FF5C01;
+            color: white;
+            margin-left: -5px;
+        }
     }
 }
