@@ -1,10 +1,10 @@
 const photos = [
-    { photo: "../img/slide1.jpeg" },
-    { photo: "../img/slide2.jpeg" },
-    { photo: "../img/slide3.jpeg" },
-    { photo: "../img/slide4.jpeg" },
-    { photo: "../img/slide5.jpeg" },
-    { photo: "../img/slide6.jpeg" }
+    { photo: "./img/slide1.jpeg" },
+    { photo: "./img/slide2.jpeg" },
+    { photo: "./img/slide3.jpeg" },
+    { photo: "./img/slide4.jpeg" },
+    { photo: "./img/slide5.jpeg" },
+    { photo: "./img/slide6.jpeg" }
 ];
 
 function generateSlide(data) {
