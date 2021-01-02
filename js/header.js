@@ -12,8 +12,18 @@ function checkClass(header) {
         setTimeout(launchImage, 300);
     }
 }
-checkClass(header);
 function launchImage() {
     const image = document.querySelector('.headerLinks img')
     image.style.width = '32px';
-} 
+}
+
+window.onscroll = function () {
+    const windowHeight = window.pageYOffset;
+    if (windowHeight > 150) {
+        checkClass(header);
+        document.querySelector("header").classList.add('headerScroll');
+        return;
+    } else {
+        document.querySelector("header").classList.remove('headerScroll');
+    }
+}
