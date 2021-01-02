@@ -1,11 +1,11 @@
 // generate sauce options for cart.html
 const sc = 'sauce';
 const sauceData = [
-    { title: 'Porcijinis kečupas', photo: `../img/products/${sc}_kecupas.jpg`, price: 0.15 },
-    { title: 'BBQ padažas', photo: `../img/products/${sc}_bbq.jpeg`, price: 0.35 },
-    { title: 'Bulvyčių padažas', photo: `../img/products/${sc}_bulvyciu.jpeg`, price: 0.35 },
-    { title: 'Česnakinis padažas', photo: `../img/products/${sc}_cesnakinis.jpeg`, price: 0.35 },
-    { title: 'Kario-mangų padažas', photo: `../img/products/${sc}_kario.jpeg`, price: 0.35 }
+    { title: 'Porcijinis kečupas', photo: `./img/products/${sc}_kecupas.jpg`, price: 0.15 },
+    { title: 'BBQ padažas', photo: `./img/products/${sc}_bbq.jpeg`, price: 0.35 },
+    { title: 'Bulvyčių padažas', photo: `./img/products/${sc}_bulvyciu.jpeg`, price: 0.35 },
+    { title: 'Česnakinis padažas', photo: `./img/products/${sc}_cesnakinis.jpeg`, price: 0.35 },
+    { title: 'Kario-mangų padažas', photo: `./img/products/${sc}_kario.jpeg`, price: 0.35 }
 ];
 function generateSauces(data) {
     const list = document.querySelector('.saucesList');
