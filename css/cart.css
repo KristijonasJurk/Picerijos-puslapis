@@ -159,6 +159,16 @@ main {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 15fr 8fr;
+      grid-template-columns: 8fr 15fr 8fr;
+}
+
+main div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 main h1 {
@@ -171,6 +181,10 @@ main h3 {
   font-weight: 400;
   margin: 50px 0;
   font-size: 22px;
+}
+
+main h3:nth-of-type(2) {
+  margin: 50px 0 20px;
 }
 
 main h3:last-of-type {
@@ -317,5 +331,12 @@ main .backAndNext button:last-of-type {
 
 main .backAndNext button:last-of-type i {
   margin: 0 15px 0 30px;
+}
+
+main .backAndNext button:hover {
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=cart.css.map */
