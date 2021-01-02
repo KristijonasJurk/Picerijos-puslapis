@@ -166,6 +166,17 @@ header .headerBottom ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .headerBottom ul img {
+  width: 0px;
+  height: 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 20px 0 0;
 }
 
 header .headerBottom ul li {
@@ -233,8 +244,8 @@ header .headerBottom button:hover {
           align-items: center;
 }
 
-.fixedHeader .headerBottom img {
-  width: 0px;
+.fixedHeader .headerBottom ul img {
+  width: 32px;
   height: 32px;
   -webkit-transition: 0.3s;
   transition: 0.3s;

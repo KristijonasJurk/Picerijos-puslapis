@@ -106,6 +106,13 @@ header {
         ul {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            img {
+                width: 0px;
+                height: 32px;
+                transition: 0.3s;
+                margin: 0 20px 0 0;
+            }
             li {
                 margin: 10px;
                 list-style: none;
@@ -150,12 +157,12 @@ header {
         justify-content: space-between;
         ul {
             align-items: center;
-        }
-        img {
-            width: 0px;
-            height: 32px;
-            transition: 0.3s;
-            margin: 0 20px 0 0;
+            img {
+                width: 32px;
+                height: 32px;
+                transition: 0.3s;
+                margin: 0 20px 0 0;
+            }
         }
         button {
             
