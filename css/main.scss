@@ -135,12 +135,15 @@ header {
         button {
             height: 40px;
             width: 110px;
-            font-size: 16px;
-            color: white;
-            font-weight: 300;
             background-color: $orange;
             &:hover {
                 background-color: #d44e06;
+            }
+            a {
+                font-size: 16px;
+                font-weight: 300;
+                color: white;
+                text-decoration: none;
             }
         }
     }
