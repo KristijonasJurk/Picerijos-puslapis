@@ -44,6 +44,8 @@ header {
   margin: 0px 0%;
   padding-bottom: 10px;
   z-index: 2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .headerTop {
@@ -57,7 +59,9 @@ header .headerTop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 8% 0;
+  margin: 20px 8% 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .headerTop .title {
@@ -155,7 +159,7 @@ header .headerBottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 8% 10px;
+  margin: 0px 8% 10px;
 }
 
 header .headerBottom ul {

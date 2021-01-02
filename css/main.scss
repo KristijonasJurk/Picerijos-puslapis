@@ -35,12 +35,14 @@ header {
     margin: 0px 0%;
     padding-bottom: 10px;
     z-index: 2;
+    transition: 0.3s;
     .headerTop {
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 8% 0;
+        margin: 20px 8% 20px;
+        transition: 0.3s;
         .title {
             display: flex;
             align-items: center;
@@ -102,7 +104,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 8% 10px;
+        margin: 0px 8% 10px;
         ul {
             display: flex;
             flex-direction: row;

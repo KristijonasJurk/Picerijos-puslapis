@@ -2,12 +2,17 @@ const header = document.querySelector('header');
 
 function checkClass(header) {
     const headerBottom = document.querySelector('.headerBottom ul');
+    const headerTop = document.querySelector('.headerTop');
     if (header.classList.contains('headerScroll')) {
         headerBottom.classList.add('fixedHeader');
-        setTimeout(launchImage, 300);
+        headerTop.style.transform = 'translateY(-100px)';
+        header.style.transform = 'translateY(-70px)';
+        setTimeout(launchImage, 0);
     } else {
         headerBottom.classList.remove('fixedHeader');
-        setTimeout(removeImage, 300);
+        headerTop.style.transform = 'translateY(0px)';
+        header.style.transform = 'translateY(0px)';
+        setTimeout(removeImage, 0);
     }
 }
 function launchImage() {
@@ -18,7 +23,6 @@ function removeImage() {
     const image = document.querySelector('.headerLinks img')
     image.style.width = '0px';
 }
-
 window.onscroll = function () {
     const windowHeight = window.pageYOffset;
     if (windowHeight > 50) {
