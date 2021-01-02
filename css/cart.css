@@ -174,7 +174,7 @@ main h3 {
 }
 
 main h3:last-of-type {
-  margin: 50px 0 10px;
+  margin: 50px 0 20px;
 }
 
 main .promoCode input {
@@ -198,5 +198,82 @@ main .promoCode button {
   background-color: #FF5C01;
   color: white;
   margin-left: -5px;
+}
+
+main .finalPriceBox {
+  margin: 50px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .finalPriceBox h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main .finalPriceBox h3 {
+  margin: 0 0 0 14px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FF5C01;
+}
+
+main .backAndNext {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .backAndNext button {
+  height: 48px;
+  width: 200px;
+  color: #706f6f;
+  background-color: #F3F3F7;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .backAndNext button:last-of-type {
+  width: 150px;
+}
+
+main .backAndNext button i {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 30px 0 15px;
+}
+
+main .backAndNext button:last-of-type {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .backAndNext button:last-of-type i {
+  margin: 0 15px 0 30px;
 }
 /*# sourceMappingURL=cart.css.map */

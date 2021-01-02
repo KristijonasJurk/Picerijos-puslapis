@@ -116,7 +116,7 @@ main {
         margin: 50px 0;
         font-size: 22px;
         &:last-of-type {
-            margin: 50px 0 10px;
+            margin: 50px 0 20px;
         }
     }
     .sauces {
@@ -144,6 +144,54 @@ main {
             background-color: #FF5C01;
             color: white;
             margin-left: -5px;
+        }
+    }
+    .finalPriceBox {
+        margin: 50px 0 20px;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        h4 {
+            font-weight: 500;
+            font-size: 20px;
+        }
+        h3 {
+            margin: 0 0 0 14px;
+            font-weight: 500;
+            font-size: 24px;
+            color: $orange;
+        }
+    }
+    .backAndNext {
+        margin: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            height: 48px;
+            width: 200px;
+            color: rgb(112, 111, 111);
+            background-color: $gray;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &:last-of-type {
+                width: 150px;
+            }
+            i {
+                font-size: 24px;
+                font-weight: 500;
+                margin: 0 30px 0 15px;
+            }
+            &:last-of-type {
+                justify-content: flex-end;
+                i {
+                    margin: 0 15px 0 30px;
+                }
+            }
         }
     }
 }
