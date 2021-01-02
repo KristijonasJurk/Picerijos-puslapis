@@ -147,13 +147,15 @@ header {
     .headerBottom {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         ul {
             align-items: center;
         }
         img {
-            width: 32px;
+            width: 0px;
             height: 32px;
+            transition: 0.3s;
+            margin: 0 20px 0 0;
         }
         button {
             

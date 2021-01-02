@@ -222,9 +222,9 @@ header .headerBottom button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fixedHeader .headerBottom ul {
@@ -234,8 +234,11 @@ header .headerBottom button:hover {
 }
 
 .fixedHeader .headerBottom img {
-  width: 32px;
+  width: 0px;
   height: 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 20px 0 0;
 }
 
 .slide {
